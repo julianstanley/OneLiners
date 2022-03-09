@@ -1,5 +1,11 @@
 # OneLiners
 
+## Bash loops
+Do some operation that outputs a list of things you want to loop over. For example, if I just want one column of a tab-delim file:
+```
+for line in $(cut -f1 Expression_leadered.txt); do echo $line; done
+```
+
 ## NCBI
 Generally you can get genes with `esearch`. E.g. for the Caulobacter gene CCNA_01405, I can fetch the sequence with:
 
