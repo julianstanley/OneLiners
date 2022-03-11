@@ -1,5 +1,13 @@
 # OneLiners
 
+## Fasta files
+Get the first 50 nucleotides in every sequence in a fasta file:
+
+```
+seqkit subseq -r 1:49 my_sequences.fasta
+```
+
+
 ## Bash loops
 Do some operation that outputs a list of things you want to loop over. For example, if I just want one column of a tab-delim file:
 ```
