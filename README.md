@@ -1,5 +1,13 @@
 # OneLiners
 
+## Extracting subtext
+
+pcregrep is your friend. For example, to get the start sequences from headers in some fasta files:
+
+```
+pcregrep -o1 ">NC_011916\.1:([0-9]+)" leaderless_first35_fold.out
+```
+
 ## Fasta files
 Get the first 50 nucleotides in every sequence in a fasta file:
 
