@@ -1,5 +1,11 @@
 # OneLiners
 
+## Separate a bed file into plus and minus genes
+
+```
+cat ~/labshare/genome_annotations/Synechococcus_elongatus/NCBI/GCF_014698905.1_ASM1469890v1_genomic.bed | awk '$6 == "-" {print $0}'
+```
+
 ## Extracting subtext
 
 pcregrep is your friend. For example, to get the start sequences from headers in some fasta files:
