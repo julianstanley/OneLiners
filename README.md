@@ -1,5 +1,11 @@
 # OneLiners
 
+This repository just contains this README. 
+
+There are tons of little commands that often will (embarrassingly) save me hours of time at the terminal, only for me to forget them later and have to dig through my history trying to find them.
+
+Here, I'll messily compile commands that I found useful, just updating whenver I run into them.
+
 ## Separate a bed file into plus and minus genes
 
 ```
