@@ -40,3 +40,20 @@ Generally you can get genes with `esearch`. E.g. for the Caulobacter gene CCNA_0
 ```
 esearch -db gene -query "CCNA_01405[SYMBOL]" | efetch -format docsum | xtract -pattern GenomicInfoType -element ChrAccVer ChrStart ChrStop | xargs -n 3 sh -c 'efetch -db nuccore -format fasta -id "$0" -chr_start "$1" -chr_stop "$2"'
 ```
+
+# Helpful R snippets
+
+## Linear equation on ggplot
+
+```{r}
+library(ggpmisc)
+stat_poly_line() +
+  stat_poly_eq(aes(label = paste(after_stat(eq.label),
+                                 after_stat(rr.label), sep = "*\", \"*"))) 
+```
+
+## More axis ticks on ggplot
+
+```{r}
+scale_y_continuous(breaks = scales::pretty_breaks(n = 24))
+```
